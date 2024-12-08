@@ -2,7 +2,7 @@
   <div v-if="review">
     <h2>{{ review.title.rendered }}</h2>
     <p>{{ review.content.rendered }}</p>
-    <p><strong>Rating: </strong>{{ review.rating }}</p>
+    <p>{{ review.rating }}</p>
   </div>
   <div v-else>
     <p>Loading...</p>
