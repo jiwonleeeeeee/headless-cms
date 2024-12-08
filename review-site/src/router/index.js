@@ -1,14 +1,10 @@
-
 import { createRouter, createWebHistory } from 'vue-router';
-import ReviewList from '../components/ReviewList.vue'; 
+import ReviewList from '../components/ReviewList.vue';
+import ReviewDetail from '../components/ReviewDetail.vue';
 
 const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: ReviewList, 
-  },
-  // 라우팅 추가는 여기
+  { path: '/', name: 'Home', component: ReviewList },
+  { path: '/review/:id', name: 'ReviewDetail', component: ReviewDetail },
 ];
 
 const router = createRouter({

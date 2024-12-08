@@ -1,15 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <h1>Review List</h1>
+    <!-- reviewList 컴포넌트 사용 -->
+    <ReviewList />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// reviewList 컴포넌트 import
+import ReviewList from './components/ReviewList.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ReviewList // 컴포넌트 등록
   }
 }
 </script>
